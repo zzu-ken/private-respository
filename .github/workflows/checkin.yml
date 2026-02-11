@@ -9,5 +9,6 @@ jobs:
   checkin:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Run check-in script
         run: bash ./checkin/glados_checkin.sh
